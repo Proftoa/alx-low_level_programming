@@ -1,18 +1,12 @@
 #!/bin/bash
-#include <stdio.h>
-
 /**
- * main - print the string in the put function
+ *main - Entry point
  *
- * Description: using the main function
- * this program prints "Programming is like building a multilingual puzzle
- * Return: 0
+ * Description: "Programming is like building a multilingual puzzle"
+ *Return: 0 if exited and non-zero if otherwise
  */
 int main(void)
 {
-	puts("\"Programming is like building a multilingual puzzle");
-	return (0);
-
+puts("\"Programming is like building a multilingual puzzle")
+	return (0)
 }
-Footer
-© 2022 GitHub, Inc.
