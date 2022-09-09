@@ -1,1 +1,1 @@
-Write a C program that prints exact
+Write a C program that prints exactly
