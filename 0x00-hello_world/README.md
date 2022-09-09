@@ -1,1 +1,1 @@
-Write a C program that prints exactl
+Write a C program that prints the size of various types on the computer it
