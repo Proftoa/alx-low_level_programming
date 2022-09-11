@@ -5,8 +5,8 @@
  *
  * Return: Always 0
  */
-int main(void)
-{
+ int main(void)
+ {
 	int num;
 
 	for (num = 0; num < num++)
@@ -15,4 +15,4 @@ int main(void)
 	putchar('\n');
 
 	return (0);
-}
+ }
