@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - Prints the last digit of a randomly generated number
+ * main - Printstyle doc for function main goes here the last digit of a rando
  * And whether its is greater than 5, less than 6 or 0
  * Return: Always 0
  */
