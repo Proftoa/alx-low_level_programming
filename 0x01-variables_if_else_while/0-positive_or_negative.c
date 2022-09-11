@@ -1,10 +1,10 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/*
+/**
  * main - Entry point
  * Description: Using the main function, prints (positive, negtive or zero)
- * Return: 0 if successful
+ * Return: Always 0
  */
 int main(void)
 {
