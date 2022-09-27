@@ -3,11 +3,10 @@
 /**
  * _strchr - Locates a character in a string
  *
- *   * @s: String
+ *  @s: String
  *
- *    * @c: Character to search
- *
- * Return: Pointer to the first occurrence of the 
+ *  @c: Character to search
+ *  Return: Pointer to the first occurrence of the
  *     character c in the string s
  */
 
@@ -17,35 +16,24 @@
 
 	while (*s != '\0')
 {
-
 	if (*s == c)
+{
+
+	return (s);
+
+}
+	++s;
+
 }
 
-											return (s);
-										}
+	if (*s == c)
 
+{
 
+	return (s);
 
-									++s;
+}
 
-										}
-
-
-
-			if (*s == c)
-
-					{
-
-								return (s);
-
-
-
-									}
-
-
-
-
-
-				return (0);/* values null*/
+	return (0);/* values null*/
 
 }
