@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include <ctype.h>
 
 #include <stdio.h>
 
@@ -19,8 +20,6 @@ int main(int argc, char *argv[])
 {
 
 	int i, j, sum;
-
-
 
 	if (argc == 1)
 
@@ -44,21 +43,20 @@ int main(int argc, char *argv[])
 				|| argv[i][j] == '-'))
 
 {
+	printf("Error\n");
 
-																									printf("Error\n");
+	return (1);
 
-																													return (1);
-
-																																}
+}
 
 																		}
 
-											sum += atoi(argv[i]);
+	sum += atoi(argv[i]);
 
-												}
+}
 
-					printf("%d\n", sum);
+	printf("%d\n", sum);
 
-						return (0);
+	return (0);
 
 }
