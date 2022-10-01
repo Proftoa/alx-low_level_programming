@@ -1,135 +1,80 @@
-#include <stdlib.h>
-
 #include <stdio.h>
 
-#include "main.h"
+#include <stdlib.h>
 
 
 
 /**
+ * main - program that prints the minimum number of coins
  *
- *  * main - prints the min num of coins to make change for an amount of money
- *
- *   *
+ *   * to make change for an amount of money
  *
  *    * @argc: argument count
  *
  *     * @argv: argument vector
  *
- *      * Return: int
+ *      * Return: 0 success 1 failure
  *
- *       */
+ */
 
-int main(int argc, char *argv[])
+
+
+int main(int argc, char **argv)
 
 {
 
-		unsigned int count = 0;
+	int coins, i, amount;
+
+	int value[5] = {25, 10, 5, 2, 1};
+
+
+	coins = 0;
+
+	amount = atoi(argv[argc - 1]);
 
 
 
-			if (argc != 2)
+	if (argc != 2)
 
-					{
+	{
 
-								printf("Error\n");
+	printf("Error\n");
 
-										return (1);
+	return (1);
 
-											}
+	}
 
-				else if (atoi(argv[1]) < 0)
+	else if (amount <= 0)
 
-						{
+	{
 
-									printf("%d\n", 0);
+	printf("0\n");
 
-											return (0);
+	}
 
-												}
+	else
 
-					count = coin_count(count, atoi(argv[1]));
+	{
 
-						printf("%d\n", count);
+	for (i = 0; i < 5; i++)
 
-							return (0);
+	{																	if (value[i] <= amount)
+	{
+	coins += (amount / value[i]);
+	amount -= (amount / value[i]) * value[i];
+	if (amount == 0)
+	{
+	printf("%d\n", coins);
+	
+	break;
+	}
+	
+	}
+	
+	}
 
-}
+	}
 
-
-
-/**
- *
- *  * coin_count - counts the min coins needed for change
- *
- *   *
- *
- *    * @count: int to count coins
- *
- *     * @num: argv[1] changed to int
- *
- *      * Return: int
- *
- *       */
-
-unsigned int coin_count(unsigned int count, int num)
-
-{
-
-		unsigned int sum = 0;
-
-
-
-			while (!(sum + 25 > (unsigned int)num))
-
-					{
-
-								sum += 25;
-
-										count++;
-
-											}
-
-				while (!(sum + 10 > (unsigned int)num))
-
-						{
-
-									sum += 10;
-
-											count++;
-
-												}
-
-					while (!(sum + 5 > (unsigned int)num))
-
-							{
-
-										sum += 5;
-
-												count++;
-
-													}
-
-						while (!(sum + 2 > (unsigned int)num))
-
-								{
-
-											sum += 2;
-
-													count++;
-
-														}
-
-							while (!(sum + 1 > (unsigned int)num))
-
-									{
-
-												sum += 1;
-
-														count++;
-
-															}
-
-								return (count);
+	return (0);
 
 }
