@@ -15,7 +15,6 @@
 char *argstostr(int ac, char **av)
 
 {
-
 	char *s;
 
 	int i, j;
@@ -36,6 +35,5 @@ char *argstostr(int ac, char **av)
 		while (s[j++])
 			len++;
 		len++;
-
 	}
-}
+
