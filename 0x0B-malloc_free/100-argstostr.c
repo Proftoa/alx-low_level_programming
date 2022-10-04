@@ -19,6 +19,7 @@ char *argstostr(int ac, char **av)
 	char *str, *s;
 
 	int i, j;
+
 	int k, len;
 
 	len = 0;
@@ -37,3 +38,5 @@ char *argstostr(int ac, char **av)
 		len++;
 
 	}
+
+}
