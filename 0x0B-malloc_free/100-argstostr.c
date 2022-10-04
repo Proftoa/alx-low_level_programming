@@ -7,8 +7,6 @@
  *    * @ac: arguments count
  *
  *     * @av: arguments vector
- *
- *      *
  * Return: a pointer to a new string, or NULL if it fails
  *
  */
@@ -20,7 +18,8 @@ char *argstostr(int ac, char **av)
 
 	char *str, *s;
 
-	int i, j, k, len;
+	int i, j;
+	int k, len;
 
 	len = 0;
 
@@ -36,4 +35,5 @@ char *argstostr(int ac, char **av)
 		while (s[j++])
 			len++;
 		len++;
+
 	}
