@@ -36,4 +36,4 @@ char *argstostr(int ac, char **av)
 			len++;
 		len++;
 	}
-
+}
