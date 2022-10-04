@@ -9,8 +9,7 @@
  *     * @av: arguments vector
  *
  *      *
- *
- *       * Return: a pointer to a new string, or NULL if it fails
+ * Return: a pointer to a new string, or NULL if it fails
  *
  */
 
