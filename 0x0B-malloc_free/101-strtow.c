@@ -36,7 +36,7 @@ int countChars(char *str)
 	int chars;
 
 	chars = 0;
-		while (*str)
+	while (*str)
 	{
 	if (*str != ' ')
 	{
