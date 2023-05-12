@@ -21,7 +21,7 @@ myrand = (rand() % 125) + 1;
 printf("%c", myrand);
 total -= myrand;
 }
-printf("%c", total);
+printf("%c\n", total);
 
 return (0);
 }
